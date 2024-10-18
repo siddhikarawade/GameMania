@@ -1,0 +1,108 @@
+*{
+    /* margin: 5px; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-content: center;
+}
+body{
+    margin:10px;
+    align-content: center;
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.home{
+    margin:15px;
+    position:absolute;
+    left:15px;
+    font-size: large;
+    align-items: center;
+    width: 6rem;
+    overflow: hidden;
+    a{
+        text-decoration: none;
+        color:white;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        .home-text{
+            position: absolute;
+            height: 100%;
+            left:-150px;
+        }
+    }
+}
+.material-symbols-outlined{
+    font-size: xx-large;
+    margin-right: 5px;
+    z-index: 1;
+}
+
+/* .home button{
+    border:none;
+    background-color: white;
+} */
+.home:hover{
+    transform: scale(1.2);
+    transition: ease-in-out;
+    color:white;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px; */
+    a .home-text{
+        transition: 0.3s ease-in-out;
+        left: 40px;
+    }
+
+}
+.msg{
+    margin:15px;
+    font-size: large;
+    font-weight:800;
+    color: white;
+    text-transform: uppercase;
+}
+.cards{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content:center;
+    align-items: center;
+    /* background-color: aqua; */
+    margin:5px;
+    flex-wrap: wrap;
+}
+.card{
+    height:17rem;
+    width:14rem;
+    background-color: hotpink;
+    /* background-color: rgb(135, 206, 250, 0.7); */
+    /* background-color: rgb(144, 238, 144, 0.7); */
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 30px;
+    margin: 30px;
+    font-size: large;
+    font-weight:800;
+    border: 2px solid white;  
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: ease-in-out;
+    /* border: 2px white solid; */
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 5px 15px;
+    a{
+        img{
+        transform: scale(1.03);
+        transition: ease-in-out;
+    }}
+}
+.card a img{
+    height:12rem;
+    width:12rem;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+

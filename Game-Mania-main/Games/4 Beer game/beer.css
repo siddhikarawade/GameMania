@@ -1,0 +1,162 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    display: inline-block;
+    height: 80vh;
+    width: 40vw;
+    position: absolute;
+    left: 40vw;
+    top: 12vh;
+    border: 3px solid black;
+    border-radius: 8%;
+    font-weight: 600;
+}
+
+.reset {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    padding: 5px;
+    /* margin: 5px; */
+    font-size: large;
+}
+
+.target,
+.filledpercent {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.stand {
+    height: 80%;
+    width: 20%;
+    background-color: black;
+}
+
+.g2 {
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 20vh;
+    left: 50px;
+    border-radius: 8px;
+    font-size: larger;
+
+}
+
+.handle {
+    border-top: 100px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 280px;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+}
+
+.handle:hover {
+    transform: rotate(-10deg);
+}
+
+.tap {
+    background-color: grey;
+    position: absolute;
+    width: 57%;
+    height: 19px;
+    top: 120px;
+    z-index: 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pour {
+    background-color: grey;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 115px;
+    left: 280px;
+    z-index: 6;
+}
+
+.mug-box {
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    top: 160px;
+    left: 180px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.mug {
+    position: absolute;
+    height: 90%;
+    width: 88%;
+    top: 0px;
+    left: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.fill {
+    position: relative;
+    height: 100%;
+    top: 100%;
+    background-color: rgb(65, 166, 255);
+    /* background-color: gold; */
+    z-index: 2;
+    /*   yaaaaaaaaaaaaaaaaaaa */
+    animation: fillmug 5s forwards infinite;
+}
+
+.pause {
+    animation-play-state: paused;
+}
+
+@keyframes fillmug {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.mug,
+.mug-box,
+.pour,
+.beer {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.mug-handle {
+    position: absolute;
+    height: 35%;
+    width: 30%;
+    top: 200px;
+    left: 280px;
+    border: 20px solid lightgray;
+    border-radius: 30%;
+    z-index: -1;
+}
+
+.pour-fall {
+    width: 18px;
+    height: 58%;
+    position: absolute;
+    left: 290px;
+    top: 135px;
+    /* background-color:gold; */
+    background-color: rgb(65, 166, 255);
+    z-index: 5;
+    transition: all 1s ease-out;
+}

@@ -1,0 +1,54 @@
+*{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color:rgb(95, 158, 160, 0.4);
+    margin-top: 120px;
+}
+.main-container{
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 30rem;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+.keys{
+    height:auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.key{
+    height: 150px;
+    width:150px;
+    border: 5px black solid;
+    border-radius: 20%;
+    margin: 25px;
+}
+.green{
+    background-color: aquamarine;
+}
+.pink{
+    background-color:rgb(255, 20, 147, 0.75);
+}
+.yellow{
+    background-color: gold;
+}
+.purple{
+    background-color: blueviolet;
+}
+.flash{
+    background-color: white;
+}
+.instruction{
+    display:inline-block;
+    height:auto;
+    width: 20rem;
+    position:absolute;
+    font-size: larger;
+    text-align: left;
+    left: 5%;
+    top: 25%;
+    /* line-height: 35px; */
+}

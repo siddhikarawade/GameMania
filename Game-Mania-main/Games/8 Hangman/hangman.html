@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman!</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+
+    <div id="lose" class="popup">
+        <div class="gif"><img src="lost.gif" alt=""></div>
+        <div class="msg">Game Over!</div>
+        <div class="corrword"></div>
+        <div class="playagain"><button>Play Again!</button></div>
+    </div>
+
+    <div id="win" class="popup">
+        <div class="gif"><img src="victory.gif" alt=""></div>
+        <div class="msg">Well Done!</div>
+        <div class="corrword">Your guess was correct.</div>
+        <div class="playagain2"><button>Play Again!</button></div>
+    </div>
+    
+    <div class="container">
+        <div class="draw"><img src="hangman-0.svg" alt=""></div>
+        <div class="solve">
+            <div class="instruction">Fill the blanks</div>
+            <div class="hint">Hint: </div>
+            <div class="guessleft"></div>
+            <div class="blanks">
+                <ul class="word-display"></ul>
+            </div>
+            <div class="letters">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cover"></div>
+
+
+
+    <script src="wordlist.js"></script>
+    <script src="hangman.js"></script>
+
+</body>
+</html>
