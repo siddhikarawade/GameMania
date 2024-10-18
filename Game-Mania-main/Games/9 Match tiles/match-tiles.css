@@ -20,10 +20,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
     background: #167ac2;
     border-radius: 1em;;
-    padding: 40px 60px;        
+    padding: 45px 60px;        
 }
 
 h1
